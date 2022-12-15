@@ -1,0 +1,39 @@
+.header {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 1px 1px 4px #cccccc5c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 15px 10px;
+  .logo {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+  .left {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-self: flex-end;
+    a {
+      transition: all 0.3s;
+      &.rotate {
+        transform: rotate(90deg);
+        transition: all 0.3s;
+      }
+    }
+    svg {
+      font-size: 26px;
+      font-weight: 600;
+      color: $font-color;
+    }
+  }
+  .right {
+    align-self: flex-end;
+    flex: 1;
+    .btn {
+      font-size: 14px;
+    }
+  }
+}

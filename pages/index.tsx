@@ -1,6 +1,9 @@
-import Head from "next/head";
-import Image from "next/image";
+import Button from "@components/button";
+import CategoryCard from "@components/cards/categoryCard";
+import FavoriteCard from "@components/cards/favoriteCard";
+import ProductCard from "@components/cards/productCard";
+import Header from "@components/header";
 
 export default function Home() {
-  return <h1>Home</h1>;
+  return <Header />;
 }

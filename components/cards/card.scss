@@ -1,0 +1,77 @@
+.card {
+  background-color: #d6d6d6;
+  border-radius: 10px;
+  &.category {
+    background-color: #fff;
+    .title {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+  &.favorite {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    .card_description {
+      flex: 1;
+    }
+    img {
+      width: 72px;
+      height: 72px;
+    }
+    .card_footer {
+      display: flex;
+      align-items: center;
+      img {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+  .fav {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    svg {
+      font-size: 30px;
+      color: #fff;
+    }
+  }
+  &_image {
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+  &_description {
+    padding: 10px 8px;
+    .title {
+      font-size: 11px;
+      margin: 0px;
+      font-weight: 600;
+    }
+    .price {
+      font-size: 1.8rem;
+      color: $primary-color;
+      margin: 0px;
+    }
+    .oldPrice {
+      font-size: 10px;
+      margin: 0px;
+      position: relative;
+      width: fit-content;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        top: 50%;
+        background: $primary-color;
+      }
+    }
+  }
+}
