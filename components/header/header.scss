@@ -16,11 +16,13 @@
     flex: 1;
     justify-content: space-around;
     align-self: flex-end;
+    .menu {
+      width: 300px;
+    }
     a {
-      transition: all 0.3s;
+      // transition: all 0.3s ease-in-out;
       &.rotate {
         transform: rotate(90deg);
-        transition: all 0.3s;
       }
     }
     svg {
@@ -35,5 +37,19 @@
     .btn {
       font-size: 14px;
     }
+  }
+}
+.menuHeader .ant-dropdown-menu {
+  width: 180px;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px 0 rgb(0 0 0 / 4%), 0 3px 6px -4px rgb(0 0 0 / 6%),
+    0 9px 28px 8px rgb(0 0 0 / 3%);
+  .ant-dropdown-menu-item {
+    padding-left: 25px;
+  }
+  .ant-dropdown-menu-item-group-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
   }
 }
